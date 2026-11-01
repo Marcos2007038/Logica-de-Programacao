@@ -7,20 +7,34 @@ public class Main {
 
 //      Questões 001-100 — Condicionais e Operadores Lógicos (Fácil)
 
-        /*Q4: Dada a nota final de um aluno (0 a 10), diga se ele foi aprovado (nota maior ou igual a 6) ou reprovado. (Fácil)*/
+        /*Q5: Dados os três lados de um triângulo, diga se ele é equilátero (todos os lados iguais). (Fácil)*/
 
-        /*Entrada: 7.5 Saída: Aprovado*/
+        /*Entrada: 5, 5, 5 Saída: É equilátero*/
 
 
-        float nota=7.5f;
+        String valoreEq=" 1.5, 15, 15 ";
 
-        if(nota>=6.0f && nota<=10.0f){
-            System.out.println("Aprovado");
-        } else if (nota>=0.0f && nota<=6.0f) {
-            System.out.println("Reprovado");
+        String[] valorTriangulo=valoreEq.split(",");
+
+
+        if(valorTriangulo.length != 3){
+            System.out.println("Input inválido");
         }else{
-            System.out.println("Entrada inválido, apenas de 0 até 10");
+
+            float ladoA=Float.parseFloat(valorTriangulo[0].trim());
+            float ladoB=Float.parseFloat(valorTriangulo[1].trim());
+            float ladoC=Float.parseFloat(valorTriangulo[2].trim());
+
+            if(ladoA==ladoB && ladoB==ladoC){
+                System.out.println("É equilátero");
+            }else {
+                System.out.println("Não é equilátero");
+            }
+
         }
+
+
+
 
 
     }
