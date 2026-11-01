@@ -1,2 +1,2 @@
-# L-gica-de-Programa-o
+# Logica-de-Programacao
 Melhorando minha lógica de programação
