@@ -7,21 +7,21 @@ public class Main {
 
 //      Questões 001-100 — Condicionais e Operadores Lógicos (Fácil)
 
-        /*Q2: Dada a idade de uma pessoa, informe se ela é maior de idade (18 anos ou mais). (Fácil)*/
+        /*Q3: Dado um número inteiro, diga se ele é positivo, negativo ou zero. (Fácil)*/
 
-        /*Entrada: 20 Saída: Maior de idade*/
+        /*Entrada: -7 Saída: Negativo*/
 
-        int idade=0;
 
-        if(idade<0){
-            System.out.println("Ainda não foi nascido!");
-            System.exit(0);
-        }
+        int numero=0;
 
-        if(idade>=18){
-            System.out.println("Maior de idade");
+        if(numero>0){
+            System.out.println("Zero");
+        } else if (numero<0) {
+            System.out.println("Negativo");
+        }else if (numero>0) {
+            System.out.println("Positivo");
         }else{
-            System.out.println("Menor de idade");
+            System.out.println("Não é número");
         }
 
 
