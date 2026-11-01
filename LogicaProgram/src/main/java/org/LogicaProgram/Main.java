@@ -7,21 +7,19 @@ public class Main {
 
 //      Questões 001-100 — Condicionais e Operadores Lógicos (Fácil)
 
-        /*Q3: Dado um número inteiro, diga se ele é positivo, negativo ou zero. (Fácil)*/
+        /*Q4: Dada a nota final de um aluno (0 a 10), diga se ele foi aprovado (nota maior ou igual a 6) ou reprovado. (Fácil)*/
 
-        /*Entrada: -7 Saída: Negativo*/
+        /*Entrada: 7.5 Saída: Aprovado*/
 
 
-        int numero=0;
+        float nota=7.5f;
 
-        if(numero>0){
-            System.out.println("Zero");
-        } else if (numero<0) {
-            System.out.println("Negativo");
-        }else if (numero>0) {
-            System.out.println("Positivo");
+        if(nota>=6.0f && nota<=10.0f){
+            System.out.println("Aprovado");
+        } else if (nota>=0.0f && nota<=6.0f) {
+            System.out.println("Reprovado");
         }else{
-            System.out.println("Não é número");
+            System.out.println("Entrada inválido, apenas de 0 até 10");
         }
 
 
