@@ -7,15 +7,23 @@ public class Main {
 
 //      Questões 001-100 — Condicionais e Operadores Lógicos (Fácil)
 
-        /*Q1: Dado um número inteiro, diga se ele é par ou ímpar. (Fácil)*/
+        /*Q2: Dada a idade de uma pessoa, informe se ela é maior de idade (18 anos ou mais). (Fácil)*/
 
-        /*Entrada: 15 Saída: Ímpar*/
+        /*Entrada: 20 Saída: Maior de idade*/
 
-        int valor=15;
+        int idade=0;
 
-        String rest=(valor%2==0)?"Par":"Ímpar";
+        if(idade<0){
+            System.out.println("Ainda não foi nascido!");
+            System.exit(0);
+        }
 
-        System.out.println(rest);
-        
+        if(idade>=18){
+            System.out.println("Maior de idade");
+        }else{
+            System.out.println("Menor de idade");
+        }
+
+
     }
 }
