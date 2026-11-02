@@ -7,35 +7,23 @@ public class Main {
 
 //      Questões 001-100 — Condicionais e Operadores Lógicos (Fácil)
 
-        /*Q5: Dados os três lados de um triângulo, diga se ele é equilátero (todos os lados iguais). (Fácil)*/
+        /*Q6: Dado um ano, diga se ele é bissexto (divisível por 4, mas não por 100, exceto se também for divisível por
+400). (Fácil)*/
 
-        /*Entrada: 5, 5, 5 Saída: É equilátero*/
+        /*Entrada: 2024 Saída: Bissexto*/
 
+        int ano=2024;
 
-        String valoreEq=" 1.5, 15, 15 ";
-
-        String[] valorTriangulo=valoreEq.split(",");
-
-
-        if(valorTriangulo.length != 3){
-            System.out.println("Input inválido");
-        }else{
-
-            float ladoA=Float.parseFloat(valorTriangulo[0].trim());
-            float ladoB=Float.parseFloat(valorTriangulo[1].trim());
-            float ladoC=Float.parseFloat(valorTriangulo[2].trim());
-
-            if(ladoA==ladoB && ladoB==ladoC){
-                System.out.println("É equilátero");
-            }else {
-                System.out.println("Não é equilátero");
-            }
-
+        if(ano<=0){
+            System.out.println("Não é valido");
+            return;
         }
 
-
-
-
+        if(((ano%4==0) && ano%100!=0) || (ano%400==0)){
+            System.out.println("É bissexto");
+        }else{
+            System.out.println("Não é bissexto");
+        }
 
     }
 }
