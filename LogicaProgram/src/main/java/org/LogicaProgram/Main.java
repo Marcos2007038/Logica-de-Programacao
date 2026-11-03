@@ -7,55 +7,14 @@ public class Main {
 
 //      Questões 001-100 — Condicionais e Operadores Lógicos (Fácil)
 
-        /*Q7: Dado o valor de uma compra, informe se o cliente ganha frete grátis (compras acima de R$ 200). (Fácil)*/
+        /*Q8: Dada a temperatura de hoje em graus Celsius, diga se está calor (acima de 30 graus). (Fácil)*/
 
-        /*Entrada: 250 Saída: Frete grátis*/
+        /*Entrada: 35 Saída: Está calor*/
 
+        int dado=35;
 
-        Double[] valores={25.0,23.0,90.0,21.0,5.7,89.45};
-
-        /*
-        * [0]-Carne
-        * [1]-Peixe
-        * [2]-Picanha
-        * [3]-Frango
-        * [4]-Miojo sabor carne
-        * [5]-Pouvo Fresco
-        * */
-
-
-        // x,x,x,x,x,x,x
-        String dados="0,0,0,0,0,0,0,0";
-
-        char[] dadosTratados=dados.replaceAll("\\D","").toCharArray();
-
-        int soma=0;
-        for(char valor : dadosTratados){
-            switch (valor){
-                case '0':
-                    soma+=valores[0];
-                    break;
-                case '1':
-                    soma+=valores[1];
-                    break;
-                case '2':
-                    soma+=valores[2];
-                    break;
-                case '3':
-                    soma+=valores[3];
-                    break;
-                case '4':
-                    soma+=valores[4];
-                    break;
-                case '5':
-                    soma+=valores[5];
-                    break;
-                default:
-                    System.out.println("Deu erro");
-            }
-        }
-        String rest=(soma>=200)?"Ganhou fréte grátis":"Não ganhou o fréte grátis";
-        System.out.println(rest+": "+soma);
+        String rest=(dado>30)?"Está calor":"Não está calor";
+        System.out.println(rest);
 
     }
 }
