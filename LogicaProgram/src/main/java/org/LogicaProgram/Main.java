@@ -7,19 +7,13 @@ public class Main {
 
 //      Questões 001-100 — Condicionais e Operadores Lógicos (Fácil)
 
-        /*Q9: Dados dois números, diga qual dos dois é o maior. (Fácil)*/
+        /*Q10: Dado um número, diga se ele é múltiplo de 3. (Fácil)*/
 
-        /*Entrada: 8, 3 Saída: 8 é maior*/
+        /*Entrada: 9 Saída: É múltiplo de 3*/
 
-        double dadoA=8f;
-        double dadoB=3f;
+        int dado=10;
 
-        if(dadoA==dadoB){
-            System.out.println("Os dois tem o mesmo valor!");
-            return;
-        }
-
-        String rest=(dadoA>dadoB)?"O dado A é maior: "+dadoA:"O dado B é maior: "+dadoA;
+        String rest=(dado%3==0)?"É múltiplo de 3":"Não é múltiplo de 3";
         System.out.println(rest);
 
     }
