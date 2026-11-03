@@ -7,23 +7,55 @@ public class Main {
 
 //      Questões 001-100 — Condicionais e Operadores Lógicos (Fácil)
 
-        /*Q6: Dado um ano, diga se ele é bissexto (divisível por 4, mas não por 100, exceto se também for divisível por
-400). (Fácil)*/
+        /*Q7: Dado o valor de uma compra, informe se o cliente ganha frete grátis (compras acima de R$ 200). (Fácil)*/
 
-        /*Entrada: 2024 Saída: Bissexto*/
+        /*Entrada: 250 Saída: Frete grátis*/
 
-        int ano=2024;
 
-        if(ano<=0){
-            System.out.println("Não é valido");
-            return;
+        Double[] valores={25.0,23.0,90.0,21.0,5.7,89.45};
+
+        /*
+        * [0]-Carne
+        * [1]-Peixe
+        * [2]-Picanha
+        * [3]-Frango
+        * [4]-Miojo sabor carne
+        * [5]-Pouvo Fresco
+        * */
+
+
+        // x,x,x,x,x,x,x
+        String dados="0,0,0,0,0,0,0,0";
+
+        char[] dadosTratados=dados.replaceAll("\\D","").toCharArray();
+
+        int soma=0;
+        for(char valor : dadosTratados){
+            switch (valor){
+                case '0':
+                    soma+=valores[0];
+                    break;
+                case '1':
+                    soma+=valores[1];
+                    break;
+                case '2':
+                    soma+=valores[2];
+                    break;
+                case '3':
+                    soma+=valores[3];
+                    break;
+                case '4':
+                    soma+=valores[4];
+                    break;
+                case '5':
+                    soma+=valores[5];
+                    break;
+                default:
+                    System.out.println("Deu erro");
+            }
         }
-
-        if(((ano%4==0) && ano%100!=0) || (ano%400==0)){
-            System.out.println("É bissexto");
-        }else{
-            System.out.println("Não é bissexto");
-        }
+        String rest=(soma>=200)?"Ganhou fréte grátis":"Não ganhou o fréte grátis";
+        System.out.println(rest+": "+soma);
 
     }
 }
