@@ -7,13 +7,19 @@ public class Main {
 
 //      Questões 001-100 — Condicionais e Operadores Lógicos (Fácil)
 
-        /*Q8: Dada a temperatura de hoje em graus Celsius, diga se está calor (acima de 30 graus). (Fácil)*/
+        /*Q9: Dados dois números, diga qual dos dois é o maior. (Fácil)*/
 
-        /*Entrada: 35 Saída: Está calor*/
+        /*Entrada: 8, 3 Saída: 8 é maior*/
 
-        int dado=35;
+        double dadoA=8f;
+        double dadoB=3f;
 
-        String rest=(dado>30)?"Está calor":"Não está calor";
+        if(dadoA==dadoB){
+            System.out.println("Os dois tem o mesmo valor!");
+            return;
+        }
+
+        String rest=(dadoA>dadoB)?"O dado A é maior: "+dadoA:"O dado B é maior: "+dadoA;
         System.out.println(rest);
 
     }
