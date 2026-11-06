@@ -7,14 +7,22 @@ public class Main {
 
 //      Questões 001-100 — Condicionais e Operadores Lógicos (Fácil)
 
-        /*Q10: Dado um número, diga se ele é múltiplo de 3. (Fácil)*/
+        /*Q11: Dado o peso e a altura de uma pessoa, calcule o IMC e diga se está na faixa de peso normal (18.5 a 24.9). (Fácil)*/
 
-        /*Entrada: 9 Saída: É múltiplo de 3*/
+        /*Entrada: peso 70, altura 1.75 Saída: IMC 22.9 — Peso normal*/
 
-        int dado=10;
+        /*imc=peso(kg)/altura(m)^2*/
 
-        String rest=(dado%3==0)?"É múltiplo de 3":"Não é múltiplo de 3";
-        System.out.println(rest);
+        float altura=1.70f;
+        float peso=85f;
+
+        float imc = peso/(altura*altura);
+
+        if(imc>=18.5 && imc<=24.9){
+            System.out.println("Faixa de imc ideial: "+imc);
+        }else{
+            System.out.println("Sua faixa n esta muito legal não: "+imc);
+        }
 
     }
 }
