@@ -7,22 +7,15 @@ public class Main {
 
 //      Questões 001-100 — Condicionais e Operadores Lógicos (Fácil)
 
-        /*Q11: Dado o peso e a altura de uma pessoa, calcule o IMC e diga se está na faixa de peso normal (18.5 a 24.9). (Fácil)*/
+        /*Q12: Dada uma senha digitada, diga se ela tem pelo menos 8 caracteres (senha válida) ou não. (Fácil)*/
 
-        /*Entrada: peso 70, altura 1.75 Saída: IMC 22.9 — Peso normal*/
+        /*Entrada: "abc123" Saída: Senha inválida (menos de 8 caracteres)*/
 
-        /*imc=peso(kg)/altura(m)^2*/
+        String senha="abc123";
 
-        float altura=1.70f;
-        float peso=85f;
-
-        float imc = peso/(altura*altura);
-
-        if(imc>=18.5 && imc<=24.9){
-            System.out.println("Faixa de imc ideial: "+imc);
-        }else{
-            System.out.println("Sua faixa n esta muito legal não: "+imc);
-        }
+        String resu=(senha.length()>=8)?"Senha valida":"Senha não valida";
+        
+        System.out.println(resu);
 
     }
 }
